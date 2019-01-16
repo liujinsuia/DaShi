@@ -1,0 +1,42 @@
+/* pages/shoplist/shoplist.wxss */
+page{
+  background-color: #fff;
+}
+.shoplist{
+  padding: 20rpx;
+  display: flex;
+  border-bottom: 1px solid
+  #ddd;
+}
+.shoplist image{
+  width: 160rpx;
+  height: 160rpx;
+}
+.shop-info{
+  margin-left: 20rpx;
+  font-size: 16px;
+  color: #666;
+  width: 47%;
+}
+.title{
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+.shop-star{
+  left: 10rpx;
+  position: relative;
+  width: 22%;
+}
+.star-after{
+  color: #e2e2e2;
+  position: absolute;
+  left: 0px;
+}
+.star-before{
+  color: #f19e38;
+  position: absolute;
+  left: 0px;
+  width: 75%;
+  overflow: hidden;
+}

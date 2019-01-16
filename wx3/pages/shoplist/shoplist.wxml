@@ -1,0 +1,16 @@
+<!--pages/shoplist/shoplist.wxml-->
+<view>
+  <view class="shoplist" wx:for='{{list}}' wx:key='index'>
+    <image src="http://127.0.0.1:3000/assets/niupai.png"></image>
+    <view class='shop-info'>
+      <view class='title ell'>{{item.name}}</view>
+      <view>电话：{{item.tel}}</view>
+      <view>地址：{{item.addr}}</view>
+      <view>营业时间：{{item.mtime}}</view>
+    </view>
+    <view class='shop-star'>
+      <view class='star-after'>★★★★★</view>
+      <view class='star-before' style='width:{{item.star}}%'>★★★★★</view>
+    </view>
+  </view>
+</view>

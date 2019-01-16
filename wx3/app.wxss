@@ -1,0 +1,35 @@
+/**app.wxss**/
+/*截取过长的字符串...*/
+.ell{
+  overflow: hidden;
+  white-space: nowrap;/*不允许换行*/
+  text-overflow: ellipsis;/*超出部分添加...*/
+}
+/*灰色分隔块*/
+.divider{
+  height: 30rpx;
+  background: #ddd;
+}
+/*项目条*/
+.cell{
+  background: #fff;
+  font-size:16px;
+}
+.cell-item{
+  padding: 20rpx 30rpx;
+  border-bottom: 1rpx solid #ddd;
+}
+/*箭头*/
+.arrow{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.arrow::after{
+  content: '';
+  width: 15rpx;
+  height: 15rpx;
+  border-top: 3rpx solid #bbb;
+  border-right: 3rpx solid #bbb;
+  transform: rotate(45deg);
+}
